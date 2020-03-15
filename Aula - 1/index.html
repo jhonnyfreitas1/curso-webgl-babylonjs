@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aula 1 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babylonjs/4.0.3/babylon.js'></script>
+    <script src='index.js'></script>
+</head>
+<body>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #renderCanvas{
+            height: 100%;
+            width: 50%;
+        }
+        h1{
+            z-index: 199;
+        }
+        .main{
+            display:flex;
+            justify-content: space-between;
+            height: 100%;
+            background-color: gray  ;
+        }
+        canvas{
+            
+        }
+        .container{
+            position:absolute;
+            z-index:100;
+            top:10%;
+          }
+  .content-items{
+    background-color:gray;
+    height:100%;
+    width:150%;
+    z-index:500;
+  }   
+  .form-left{
+    border-right: ridge blue;
+  }       
+    </style>
+    <section class="main">
+
+        <div class="form-left ">
+            <div class="container" style="left: -20%;">
+                  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto  ">
+                    <h2 class="header title  ">
+                      <b>Login</b><span class="text-info ">Start</span>
+                    </h2>
+                    <div class="card card-signin p-1 shadow-lg" style="border:3px solid #3b292f;" id="radius">
+                      Área do Aluno
+                      <div class="card-body ">
+                        <form class="form-signin " method="Get">
+                          <div class="form-label-group">
+                            <label
+                              class="text-center border-bottom border-info"
+                              for="inputEmail"
+                              >E-mail</label
+                            >
+                            <input
+                              name="user_email"
+                              type="email"
+                              class="form-control"
+                              placeholder="usuarioemail@email.com"
+                              required
+                            />
+                          </div>
+          
+                          <div class="form-label-group">
+                            <label
+                              class="text-center border-bottom border-info"
+                              for="inputPassword"
+                              >Senha</label
+                            >
+                            <input
+                              name="password"
+                              type="password"
+                              class="form-control mb-5"
+                              placeholder="*********"
+                              required
+                            />
+                          </div>
+                          <hr class="my-4" />
+                          <button
+                            class="btn btn-lg btn-info btn-block text-uppercase"
+                            type="submit"
+                          >
+                            Entrar
+                          </button>
+                        </form>
+                        <span class="text-info float-right">By: Jhonny</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <canvas id='renderCanvas'> 
+            
+        </canvas>
+    </section>
+</body>
+</html>
